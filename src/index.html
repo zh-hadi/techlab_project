@@ -29,10 +29,11 @@
                     </ul>
        
                 <div class="flex  gap-5 items-center">
-                    <div class="relative">
-                        <button id="search_btn"><img src="./images/search-Icon.svg" alt=""></button>
-                        <form action="" id="search_form" class=" absolute right-0 hidden">
+                    <div class=" flex justify-between items-center">
+                        <button id="search_btn "><img src="./images/search-Icon.svg" alt=""></button>
+                        <form action="" id="search_form" class="">
                             <input type="text" class="border bg-white p-2 ">
+                            <button id="search_btn "><img src="./images/search-Icon.svg" alt=""></button>
                         </form>
                     </div>
                     <button><img src="./images/notify-Icon.svg" alt=""></button>
@@ -613,8 +614,6 @@ background: linear-gradient(59deg, rgba(16,8,8,0.9136029411764706) 31%, rgba(8,8
                              <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/facebook-Icon.svg" alt=""></a>
                              <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/x-Icon.svg" alt=""></a>
                              <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/linkdin-icon.svg" alt=""></a>
-                            
-                             
                          </div>
                      </div>
                     </div>
@@ -649,7 +648,7 @@ background: linear-gradient(59deg, rgba(16,8,8,0.9136029411764706) 31%, rgba(8,8
          
             // search button
             $(document).on('click', '#search_btn', function(){
-                $(this).next().show();
+                $('.search_form').show();
             })
 
             //  month and yarly plan section

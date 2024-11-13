@@ -47,7 +47,7 @@
     <div class="bg-[#141414] ">
         <div class="container max-w-[1580px] mx-auto ">
             <!-- account section start  -->
-             <section class="py-[50px] flex justify-between">
+             <section class="py-[50px] flex justify-between items-start">
                 <div class="bg-[#0F0F0F] border border-[#262626] p-5 w-2/12 ">
                     <ul class="flex flex-col gap-7">
                         <li><a href="" class="flex justify-start gap-4 text-white items-center text-lg"><img class="h-[38px] w-[38px]" src="./images/account-logo.svg" alt="">Account</a></li>
@@ -59,13 +59,55 @@
                 </div>
                 <div class="bg-[#0F0F0F] border border-[#262626] p-10 w-9/12">
                     <h2 class="text-2xl font-semibold text-white mb-5">Account</h2>
-                    <div class="">
+                    <div class="flex flex-col gap-3 justify-start">
                         <h3 class="text-white opacity-50">Account Details</h3>
                         <div class="rounded-full h-[200px] w-[200px]">
                             <img class="w-full" src="./images/profile-pic.png" alt="">
                         </div>
+                        <div>
+                            <a href="# " class="px-10 py-2 border text-white  text-sm rounded border-[#FFFFFF]">Cancel Membership</a>
+                        </div>
                     </div>
-                    <form action=""></form>
+                    <form action="" class="flex flex-col gap-5 my-10">
+                        <div class="flex gap-5 justify-between">
+                            <div class="flex flex-col gap-3 text-white w-full">
+                                <label for="" class="text-lg font-normal">First Name</label>
+                                <input type="text" name="firstname" class="opacity-50 bg-[#141414] border border-[#262626] p-2 w-full " placeholder="Jone">
+                            </div>
+    
+                            <div class="flex flex-col gap-3 text-white w-full">
+                                <label for="" class="text-lg font-normal">First Name</label>
+                                <input type="text" name="firstname" class="opacity-50 bg-[#141414] border border-[#262626] p-2 w-full " placeholder="Jone">
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-3 text-white w-full">
+                            <label for="" class="text-lg font-normal">Email</label>
+                            <input type="text" name="firstname" class="opacity-50 bg-[#141414] border border-[#262626] p-2 w-full " placeholder="jone.doe@gmail.com">
+                        </div>
+
+                        <div class="flex flex-col gap-3 text-white w-full">
+                            <label for="" class="text-lg font-normal">Password</label>
+                            <input type="password" name="firstname" class="opacity-50 bg-[#141414] border border-[#262626] p-2 w-full " placeholder="Jone">
+                        </div>
+
+                        <div class="flex flex-col gap-3 text-white w-full">
+                            <label for="" class="text-lg font-normal">Phone Number</label>
+                            <div class="flex gap-2">
+                                <select name="color" id="color" class="bg-black">
+                                    <option value=""><img class="h-[20px] w-[20px]" src="./images/f-ind.svg" alt="" /></option>
+                                    <option value="red">Red</option>
+                                    <option value="green">Green</option>
+                                    <option value="blue">Blue</option>
+                                </select>
+                                <input type="password" name="firstname" class="opacity-50 bg-[#141414] border border-[#262626] p-2 w-full " placeholder="Jone">
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="bg-[#E50000] px-3 py-2 rounded text-white hover:opacity-50">Edit</button>
+                        </div>
+                    </form>
                 </div>
                 
              </section>

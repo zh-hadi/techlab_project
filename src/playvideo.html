@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="bg-[#141414] h-screen">
+        <div class="container max-w-[1580px] mx-auto ">
+            
+            <!--  nav section start -->
+            <nav class="flex justify-between py-3 items-center px-2">
+                <div>
+                    <a href="">
+                        <img class="w-15" src="./images/Logo.svg" alt="">
+                    </a>
+                </div>
+         
+                    <ul class=" flex gap-3 bg-[#0F0F0F]   border-2 p-1.5 rounded-md  border-[#1F1F1F]  text-white ">
+                        <li class="px-3 py-2 border bg-[#1A1A1A] border-[#1A1A1A] rounded-md" ><a href="" class="">Home</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">TV Station</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Notification</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md" ><a href="">VDO</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Setting</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Account</a></li>
+                    </ul>
+       
+                <div class="flex  gap-5 items-center">
+                    <div class="relative">
+                        <button id="search_btn"><img src="./images/search-Icon.svg" alt=""></button>
+                        <form action="" id="search_form" class=" absolute right-0 hidden">
+                            <input type="text" class="border bg-white p-2 ">
+                        </form>
+                    </div>
+                    <button><img src="./images/notify-Icon.svg" alt=""></button>
+                </div>
+            </nav>
+            <!--  nav section end -->
+
+            <!-- video play section start -->
+            <section class=" py-10 relative h-[800px] w-[1500px]">
+                <video class="h-[800px] w-[1500px] "  controls>
+                    <source src="./images/video.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="absolute bg-red-500 top-[100px] left-[200px]  rounded-md h-3/5 w-3/4 p-10" style=" background: rgb(20,20,20);
+background: linear-gradient(0deg, rgba(20,20,20,0.695098107602416) 0%, rgba(20,20,20,0.7539216370141807) 100%); ">
+                    <form action="" class="flex gap-5 flex-col justify-between ">
+                        <div class="space-y-3">
+                            <h2 class="text-xl font-semibold text-white opacity-100">Upgrate to Premium</h2>
+                            <p class="text-[#FFFFFF66] text-sm">Make the choice now to upgrade your plan to get full features of Silk Road TV.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-md text-white opactiy-70">What does premium include?</h3>
+                            <div class="flex gap-5">
+                                <div>
+                                    <input type="checkbox" class="rounded-lg border-2 border-gray-500 p-2" />
+                                    <label for="" class="text-white opacity-50 text-sm">Watch any movie and show.</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="rounded-lg border-2 border-gray-500 p-2" />
+                                    <label for="" class="text-white opacity-50 text-sm">Watch any movie and show.</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="rounded-lg border-2 border-gray-500 p-2" />
+                                    <label for="" class="text-white opacity-50 text-sm">Watch any movie and show.</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-10 w-full justify-between mb-[100px]">
+                            <div class="bg-black rounded-md w-full">
+                                <div class="flex justify-between items-center rounded-t-md bg-[#282b2b] checkbox_warp  py-2 px-3">
+                                    <h2 class="text-md text-gray-400"><span class="text-white">Weekly</span> - Best for Weekly Entertainment</h2>
+                                    <label class="inline-flex items-center space-x-2">
+                                        <input type="checkbox" class="hidden peer checkbox" active="0"/>
+                                        <span class="w-6 h-6 bg-gray-200 rounded-full peer-checked:bg-gray-500 peer-checked:border-transparent border-2 border-gray-500"></span>
+                                      </label>
+                                </div>
+                                <div class="text-white flex justify-between items-center p-4">
+                                    <div>
+                                        <div class="text-2xl font-bold">$19.99</div>
+                                        <div class="text-sm opacity-50">Before - per week</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-2xl font-bold">$19.99</div>
+                                        <div class="text-sm opacity-50">Now - per week</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-black rounded-md w-full">
+                                <div class="flex justify-between items-center bg-[#282b2b] checkbox_warp rounded-t-md py-2 px-3">
+                                    <h2 class="text-md text-gray-400"><span class="text-white">Weekly</span> - Best for Weekly Entertainment</h2>
+                                    <label class="inline-flex items-center space-x-2">
+                                        <input type="checkbox" class="hidden peer checkbox" status="0"/>
+                                        <span class="w-6 h-6 bg-gray-200 rounded-full peer-checked:bg-gray-500 peer-checked:border-transparent border-2 border-gray-500"></span>
+                                      </label>
+                                </div>
+                                <div class="text-white flex justify-between items-center p-4">
+                                    <div>
+                                        <div class="text-2xl font-bold">$19.99</div>
+                                        <div class="text-sm opacity-50">Before - per week</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-2xl font-bold">$19.99</div>
+                                        <div class="text-sm opacity-50">Now - per week</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <button class="bg-[#ED2024] py-3 rounded-full text-white">Upgrate Now</button>
+                        <div class="flex justify-center items-center">
+                            <button class="py-2 px-3 text-white flex items-center justify-between border gap-2"><span>Skip</span> <img src="./images/pause-play.svg" alt=""></button>
+                        </div>
+                    </form>
+                </div>
+                 
+             </section>
+            <!-- video play section end -->
+        </div>
+    </div>
+
+
+
+    <!-- <div class="bg-[#141414] h-full">
+        <div class="container max-w-[1580px] mx-auto ">
+           
+          hadi
+        </div>
+    </div> -->
+   <script>
+        $(document).ready(function(){
+            let ele = $('.checkbox_warp');
+            console.log(ele);
+            $(ele[0]).addClass('bg-[#ED2024]');
+            $(ele[0]).attr('active', '1');
+
+            let e1 = ele[0];
+            let e2 = ele[1];
+
+            let active = 0;
+
+            $(document).on('click', '.checkbox', function(){
+                active ? active = 0 : active = 1;
+
+                $(this).attr('active');
+    
+                console.log($(this).parent().parent().addClass('bg-[#ED2024]'));
+                
+            })
+        });
+   </script>
+
+</body>
+</html>
