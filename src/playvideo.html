@@ -135,23 +135,23 @@ background: linear-gradient(0deg, rgba(20,20,20,0.695098107602416) 0%, rgba(20,2
     </div> -->
    <script>
         $(document).ready(function(){
-            let ele = $('.checkbox_warp');
-            console.log(ele);
-            $(ele[0]).addClass('bg-[#ED2024]');
-            $(ele[0]).attr('active', '1');
-
-            let e1 = ele[0];
-            let e2 = ele[1];
-
             let active = 0;
+            let ele = $('.checkbox_warp');
+            $(ele[active]).addClass('bg-[#ED2024]');
+            $(ele[active]).attr('active', 1);
+
 
             $(document).on('click', '.checkbox', function(){
-                active ? active = 0 : active = 1;
+                let activeCheck = $(this).parent().parent().attr('active');
 
-                $(this).attr('active');
-    
-                console.log($(this).parent().parent().addClass('bg-[#ED2024]'));
-                
+                if(activeCheck !== '1'){
+                    $(ele[active]).removeClass('bg-[#ED2024]');
+                    $(ele[active]).attr('active', 0);
+                    active ? active = 0 : active = 1;
+                    
+                    $(ele[active]).addClass('bg-[#ED2024]');
+                    $(ele[active]).attr('active', 1);
+                }
             })
         });
    </script>
