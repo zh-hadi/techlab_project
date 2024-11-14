@@ -12,31 +12,38 @@
         <div class="container max-w-[1580px] mx-auto ">
             
             <!--  nav section start -->
-            <nav class="flex justify-between py-3 items-center px-2">
-                <div>
+            <nav class="flex justify-between py-3 items-center px-2 " >
+                <div class="">
                     <a href="">
                         <img class="w-15" src="./images/Logo.svg" alt="">
                     </a>
                 </div>
          
-                    <ul class=" flex gap-3 bg-[#0F0F0F]   border-2 p-1.5 rounded-md  border-[#1F1F1F]  text-white ">
-                        <li class="px-3 py-2 border bg-[#1A1A1A] border-[#1A1A1A] rounded-md" ><a href="" class="">Home</a></li>
-                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">TV Station</a></li>
-                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Notification</a></li>
-                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md" ><a href="">VDO</a></li>
-                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Setting</a></li>
-                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Account</a></li>
-                    </ul>
-       
-                <div class="flex  gap-5 items-center">
-                    <div class="relative">
-                        <button id="search_btn"><img src="./images/search-Icon.svg" alt=""></button>
-                        <form action="" id="search_form" class=" absolute right-0 hidden">
-                            <input type="text" class="border bg-white p-2 ">
+                <ul class="hidden   sm:flex gap-3 bg-[#0F0F0F]   border-2 p-1.5 rounded-md  border-[#1F1F1F]  text-white ">
+                    <li class="px-3 py-2 border bg-[#1A1A1A] border-[#1A1A1A] rounded-md" ><a href="" class="">Home</a></li>
+                    <li class="px-3 py-2 border bg-[#1A1A1A] border-[#1A1A1A] rounded-md"><a href="">TV Station</a></li>
+                    <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Notification</a></li>
+                    <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md" ><a href="">VDO</a></li>
+                    <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Setting</a></li>
+                    <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Account</a></li>
+                </ul>
+    
+                
+                <div class="flex gap-5 items-center">
+                    <div class=" flex justify-between items-center">
+                        <button id="search_btn"><img class="size-6" src="./images/search-Icon.svg" alt=""></button>
+                        <form action="" id="search_form" class="bg-black flex justify-center items-center relative">
+                            <input type="text" class="border bg-black border-redColor text-white opacity-50 focus:border-redColor  py-2 px-3">
+                            <button id="search" class="absolute right-2"><img class="size-6" src="./images/search-Icon.svg" alt=""></button>
                         </form>
                     </div>
-                    <button><img src="./images/notify-Icon.svg" alt=""></button>
+
+                    <div class="flex justify-between items-center relative">
+                        <button class=""><img class="size-6" src="./images/notify-Icon.svg" alt=""></button>
+                        <div class="bg-black border p-10 absolute hidden"></div>
+                    </div>
                 </div>
+              
             </nav>
             <!--  nav section end -->
         </div>
@@ -108,15 +115,15 @@
            <!-- const form and description info  end -->
 
             <!-- ask question section start  -->
-            <section class="space-y-10 py-[50px]">
-                <div class=" flex gap-5 justify-between items-center">
+            <section class="space-y-10 py-10 p-10 sm:p-0">
+                <div class=" flex flex-col sm:flex-row gap-5 justify-between items-start sm:items-center ">
                     <div class="text-white">
                         <h2 class="font-bold text-3xl mb-2">Frequently Asked Questions</h2>
                         <div class="text-sm opacity-50">Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe.</div>
                     </div>
                     <a href="" class="p-2 rounded bg-red-500 text-white">Ask a Question</a>
                 </div>
-                <div class="space-y-5 grid grid-cols-2 gap-5">
+                <div class="space-y-5 grid grid-cols-1  sm:grid-cols-2 gap-5">
                     <!-- single question  -->
                     <div class="flex justify-between items-center gap-2 question border-b border-red-600 ">
                         <div class="p-3 bg-stone-800 rounded text-center h-12  w-12 text-white block align-center justify-center">
@@ -180,13 +187,13 @@
             <!-- ask question section end  -->
 
             <!-- free trail section  start  -->
-            <section class=" rounded pt-[50px] h-[250px] flex justify-center items-center" style="background-image: url('./images/Background\ Images.png');" >
-                <div class="flex justify-between items-center w-full p-10">
-                    <div class="text-white ">
-                        <h2 class="font-bold text-3xl mb-2">Start  browsing for free today!</h2>
+            <section class=" rounded  h-[250px] flex  justify-center items-center" style="background-image: url('./images/Background\ Images.png');" >
+                <div class="flex flex-col sm:flex-row justify-between gap-10 items-center w-full p-10">
+                    <div class="text-white text-center sm:text-left">
+                        <h2 class="font-bold text-3xl mb-2">Start browsing for free today!</h2>
                         <p class=" opacity-50 text-sm">This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
                     </div>
-                    <a href="" class="px-2 py-2 text-white rounded bg-red-500">Stat a free trail</a>
+                    <a href="" class="btn-red">Stat a free trail</a>
                 </div>
             </section>
             <!-- free trail section  end  -->
@@ -200,7 +207,7 @@
     <div class="bg-[#0F0F0F] w-full ">
         <div class="container mx-auto ">
             <footer class="">
-                <div class="text-white flex justify-between items-start  py-5 border-b border-gray-500">
+                <div class="px-10 text-white flex flex-col sm:flex-row justify-between items-start gap-8  py-5 border-b border-gray-500">
                     <div>
                         <h3 class="text-xl font-medium mb-2">Home</h3>
                         <div class="flex flex-col gap-2 opacity-75">
@@ -249,13 +256,11 @@
                              <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/facebook-Icon.svg" alt=""></a>
                              <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/x-Icon.svg" alt=""></a>
                              <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/linkdin-icon.svg" alt=""></a>
-                            
-                             
                          </div>
                      </div>
                     </div>
 
-                    <div class="flex justify-between py-5 text-white opacity-50">
+                    <div class="flex flex-col sm:flex-row gap-5 text-center justify-between py-5 text-white opacity-50">
                         <div>
                             @2023 streamvib, All Rights Reserved
                         </div>
@@ -274,19 +279,23 @@
     <script>
         $(document).ready(function(event){
 
-
-            $(document).click(function(event) {
-                if (!$(event.target).closest('#search_btn').length) {
-                    $('#search_form').hide(); 
-                }
-            });
-
-         
-         
-            // search button
+            // $(document).click(function(event){
+            //     if(event)
+            //     $('#search_form').hide();
+            // });
+       
+            // search button function start
+            $('#search_form').hide();
             $(document).on('click', '#search_btn', function(){
-                $(this).next().show();
+                $('#search_form').show();
+                $(this).hide()
             })
+
+            $(document).on('click', '#search', function(){
+                $('#search_form').hide();
+                $('#search_btn').show();
+            });
+             // search button function end
 
             //  month and yarly plan section
             $('#monthly_plan').show();

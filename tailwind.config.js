@@ -6,7 +6,9 @@ module.exports = {
       colors: {
         "black": '#141414',
         "redColor" : '#ED2024',
-        'grayColor': '#262626'
+        'grayColor': '#262626',
+        'cardbg': '#1A1A1A',
+        'cardborder': '#262626'
       }
     },
   },

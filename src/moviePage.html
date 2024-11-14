@@ -12,38 +12,46 @@
         <div class="container max-w-[1580px] mx-auto ">
             
             <!--  nav section start -->
-            <nav class="flex justify-between py-3 items-center px-2">
-                <div>
+            <nav class="flex justify-between py-3 items-center px-2 " >
+                <div class="">
                     <a href="">
                         <img class="w-15" src="./images/Logo.svg" alt="">
                     </a>
                 </div>
          
-                    <ul class=" flex gap-3 bg-[#0F0F0F]   border-2 p-1.5 rounded-md  border-[#1F1F1F]  text-white ">
-                        <li class="px-3 py-2 border bg-[#1A1A1A] border-[#1A1A1A] rounded-md" ><a href="" class="">Home</a></li>
-                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">TV Station</a></li>
-                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Notification</a></li>
-                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md" ><a href="">VDO</a></li>
-                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Setting</a></li>
-                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Account</a></li>
-                    </ul>
-       
-                <div class="flex  gap-5 items-center">
-                    <div class="relative">
-                        <button id="search_btn"><img src="./images/search-Icon.svg" alt=""></button>
-                        <form action="" id="search_form" class=" absolute right-0 hidden">
-                            <input type="text" class="border bg-white p-2 ">
+                <ul class="hidden   sm:flex gap-3 bg-[#0F0F0F]   border-2 p-1.5 rounded-md  border-[#1F1F1F]  text-white ">
+                    <li class="px-3 py-2 border bg-[#1A1A1A] border-[#1A1A1A] rounded-md" ><a href="" class="">Home</a></li>
+                    <li class="px-3 py-2 border bg-[#1A1A1A] border-[#1A1A1A] rounded-md"><a href="">TV Station</a></li>
+                    <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Notification</a></li>
+                    <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md" ><a href="">VDO</a></li>
+                    <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Setting</a></li>
+                    <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Account</a></li>
+                </ul>
+    
+                
+                <div class="flex gap-5 items-center">
+                    <div class=" flex justify-between items-center">
+                        <button id="search_btn"><img class="size-6" src="./images/search-Icon.svg" alt=""></button>
+                        <form action="" id="search_form" class="bg-black flex justify-center items-center relative">
+                            <input type="text" class="border bg-black border-redColor text-white opacity-50 focus:border-redColor  py-2 px-3">
+                            <button id="search" class="absolute right-2"><img class="size-6" src="./images/search-Icon.svg" alt=""></button>
                         </form>
                     </div>
-                    <button><img src="./images/notify-Icon.svg" alt=""></button>
+
+                    <div class="flex justify-between items-center relative">
+                        <button class=""><img class="size-6" src="./images/notify-Icon.svg" alt=""></button>
+                        <div class="bg-black border p-10 absolute hidden"></div>
+                    </div>
                 </div>
+              
             </nav>
+    
             <!--  nav section end -->
         </div>
     </div>
 
 
-    <div class="bg-[#141414] pb-[150px]">
+    <div class="bg-black pb-[150px]">
         <div class="container max-w-[1580px] mx-auto ">
             <!-- movies single page  content start -->
             
@@ -66,14 +74,14 @@
                     </div>
                 </section>
 
-                <section class="grid grid-cols-3 grid-rows-auto grid-flow-col py-[100px] gap-5">
+                <section class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-auto md:grid-flow-col py-[100px] gap-5 p-5">
                     <!-- description -->
-                    <div class="col-start-1 col-end-3 bg-[#1A1A1A] p-5 border border-[#262626] rounded space-y-4">
+                    <div class="col-span-full md:col-start-1 md:col-end-3 bg-[#1A1A1A] p-5 border border-[#262626] rounded space-y-4">
                         <h2 class="text-xl text-white  ">Description</h2>
                         <p class=" text-white opacity-50 w-4/5">A fiery young man clashes with an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands.</p>
                     </div>
                     <!-- cast -->
-                    <div class="col-start-1 col-end-3 bg-[#1A1A1A] p-5 border border-[#262626] rounded">
+                    <div class="col-start-1 col-end-3 bg-[#1A1A1A] p-5 border border-[#262626] rounded gap-5">
                         <div class=" flex justify-between items-center space-y-5">
                             <h2 class="text-white">Cast</h2>
                             <div class="flex justify-center items-center gap-2">
@@ -81,14 +89,14 @@
                                 <button class="p-3 bg-[#141414] border border-[#262626] rounded-full"><img height="20" width="20" src="./images/right-arow.png" alt=""></button>
                             </div>
                         </div>
-                        <div class="flex justify-start items-center gap-5">
+                        <div class="flex flex-wrap  gap-5">
                             <img src="./images/cast.png" alt="">
                             <img src="./images/cast1.png" alt="">
                             <img src="./images/cast2.png" alt="">
                         </div>
                     </div>
                     <!-- review -->
-                    <div class="col-start-1 col-end-3 bg-[#1A1A1A] p-5 border border-[#262626] rounded">
+                    <div class="col-span-full md:col-start-1 md:col-end-3 bg-[#1A1A1A] p-5 border border-[#262626] rounded">
                         <div class=" flex justify-between items-center space-y-5">
                             <h2 class="text-white">Reviews</h2>
                             <div class="flex justify-center items-center gap-2">
@@ -96,57 +104,57 @@
                                
                             </div>
                         </div>
-                        <div class="grid grid-cols-2 gap-5 py-[50px]">
+                        <div class="">
 
-                            <!-- review 1 -->
-                            
-                            <div class="bg-[#0F0F0F] border border-[#262626] p-5 space-y-5 rounded">
-                                <div class="flex justify-between items-center">
-                                    <div class="text-white">
-                                        <h2 class="text-xl">Aniket Roy</h2>
-                                        <h4 class="opacity-50 text-sm">Form India</h4>
-                                    </div>
-                                    <button class="flex justify-center items-center gap-1 text-sm border border-[#262626] rounded-full px-2 py-1 bg-[#141414] text-white">
-                                        <div class="flex gap-1 justify-center items-center">
-                                            <img class="h-3 w-3" src="./images/star.svg" alt="">
-                                            <img class="h-3 w-3" src="./images/star.svg" alt="">
-                                            <img class="h-3 w-3" src="./images/star.svg" alt="">
-                                            <img class="h-3 w-3" src="./images/star.svg" alt="">
-                                            <img class="h-3 w-3" src="./images/star.svg" alt="">
-
+                            <div class="flex flex-col md:flex-row gap-10 py-[50px]">
+                                <div class="bg-[#0F0F0F] border border-[#262626] p-5 space-y-5 rounded">
+                                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                                        <div class="text-white">
+                                            <h2 class="text-xl">Aniket Roy</h2>
+                                            <h4 class="opacity-50 text-sm">Form India</h4>
                                         </div>
-                                        <span>5</span>
-                                    </button>
-                                </div>
-                                <p class="text-white opacity-50 text-sm">
-                                    This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.
-                                </p>
-                            </div>
-                            <!-- review 1 -->
-                            <div class="bg-[#0F0F0F] border border-[#262626] p-5 space-y-5 rounded">
-                                <div class="flex justify-between items-center">
-                                    <div class="text-white">
-                                        <h2 class="text-xl">Aniket Roy</h2>
-                                        <h4 class="opacity-50 text-sm">Form India</h4>
+                                        <button class="flex justify-center items-center gap-1 text-sm border border-[#262626] rounded-full px-2 py-1 bg-[#141414] text-white">
+                                            <div class="flex gap-1 justify-center items-center">
+                                                <img class="h-3 w-3" src="./images/star.svg" alt="">
+                                                <img class="h-3 w-3" src="./images/star.svg" alt="">
+                                                <img class="h-3 w-3" src="./images/star.svg" alt="">
+                                                <img class="h-3 w-3" src="./images/star.svg" alt="">
+                                                <img class="h-3 w-3" src="./images/star.svg" alt="">
+    
+                                            </div>
+                                            <span>5</span>
+                                        </button>
                                     </div>
-                                    <button class="flex justify-center items-center gap-1 text-sm border border-[#262626] rounded-full px-2 py-1 bg-[#141414] text-white">
-                                        <div class="flex gap-1 justify-center items-center">
-                                            <img class="h-3 w-3" src="./images/star.svg" alt="">
-                                            <img class="h-3 w-3" src="./images/star.svg" alt="">
-                                            <img class="h-3 w-3" src="./images/star.svg" alt="">
-                                            <img class="h-3 w-3" src="./images/star.svg" alt="">
-                                            <img class="h-3 w-3" src="./images/star.svg" alt="">
-
-                                        </div>
-                                        <span>5</span>
-                                    </button>
+                                    <p class="text-white opacity-50 text-sm">
+                                        This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.
+                                    </p>
                                 </div>
-                                <p class="text-white opacity-50 text-sm">
-                                    This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.
-                                </p>
+                  
+                                <div class="bg-[#0F0F0F] border border-[#262626] p-5 space-y-5 rounded">
+                                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                                        <div class="text-white">
+                                            <h2 class="text-xl">Aniket Roy</h2>
+                                            <h4 class="opacity-50 text-sm">Form India</h4>
+                                        </div>
+                                        <button class="flex justify-center items-center gap-1 text-sm border border-[#262626] rounded-full px-2 py-1 bg-[#141414] text-white">
+                                            <div class="flex gap-1 justify-center items-center">
+                                                <img class="h-3 w-3" src="./images/star.svg" alt="">
+                                                <img class="h-3 w-3" src="./images/star.svg" alt="">
+                                                <img class="h-3 w-3" src="./images/star.svg" alt="">
+                                                <img class="h-3 w-3" src="./images/star.svg" alt="">
+                                                <img class="h-3 w-3" src="./images/star.svg" alt="">
+    
+                                            </div>
+                                            <span>5</span>
+                                        </button>
+                                    </div>
+                                    <p class="text-white opacity-50 text-sm">
+                                        This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.
+                                    </p>
+                                </div>
+    
                             </div>
-
-                            <div class="col-start-1 col-end-3">
+                            <div class="block col-start-1 col-end-3">
                                 <div>
                                     <div class="flex gap-2 items-center justify-center">
                                         <button class="p-3 bg-[#141414] border border-[#262626]  btn-pre rounded-full" ><img src="./images/left-arow.png" alt=""></button>
@@ -157,13 +165,15 @@
                                     </div>
                                 </div>
                             </div>
+                          
+                            
 
 
                         </div>
                     </div>
 
                     <!-- information -->
-                    <div class="col-start-3 col-end-4 row-start-1 row-end-4 bg-[#1A1A1A] p-5 border border-[#262626] rounded space-y-5"> 
+                    <div class="col-span-full md:col-start-3 md:col-end-4 md:row-start-1 md:row-end-4 bg-[#1A1A1A] p-5 border border-[#262626] rounded space-y-5"> 
                        <div class="space-y-1">
                             <h2 class="flex justify-start items-center text-[#999999]"><img src="./images/calender.svg" alt="">Released Year</h2>
                             <div class="text-lg bold text-white ">2022</div>
@@ -260,195 +270,196 @@
    
 
 
-    
-    <!-- footer section start -->
-    <div class="bg-[#0F0F0F] w-full ">
-        <div class="container mx-auto ">
-            <footer class="">
-                <div class="text-white flex justify-between items-center  py-5 border-b border-gray-500">
-                    <div>
-                        <h3 class="text-xl font-medium mb-2">Home</h3>
-                        <div class="flex flex-col gap-2 opacity-75">
-                            <a class="" href="">Category</a>
-                            <a class="" href="">Devices</a>
-                            <a class="" href="">Pricing</a>
-                            <a class="" href="">FAQ</a>
-                        </div>
-                    </div>
-                    <div class="">
-                         <h3 class="text-xl font-medium mb-3">Movies</h3>
-                         <div class="flex flex-col gap-2 opacity-75">
-                             <a class="" href="">Games</a>
-                             <a class="" href="">Trending</a>
-                             <a class="" href="">New Release</a>
-                             <a class="" href="">Popular</a>
-                         </div>
-                     </div>
-                     <div class="col">
-                         <h3 class="text-xl font-medium mb-2">Shows</h3>
-                         <div class="flex flex-col gap-2 opacity-75">
-                             <a class="" href="">Games</a>
-                             <a class="" href="">Trending</a>
-                             <a class="" href="">New Release</a>
-                             <a class="" href="">Popular</a>
-                         </div>
-                     </div>
-                     <div class="col">
-                         <h3 class="text-xl font-medium mb-2">Support</h3>
-                         <div class="flex flex-col gap-2 opacity-75 ">
-                             <a class="" href="">Contact Us</a>
-                             
-                         </div>
-                     </div>
-                     <div class="col">
-                         <h3 class="text-xl font-medium mb-2">Subscription</h3>
-                         <div class="flex flex-col gap-2 opacity-75  ">
-                             <a class="" href="">Plans</a>
-                             <a class="" href="">Features</a>
-                             
-                         </div>
-                     </div>
-                     <div class="col">
-                         <h3 class="text-xl font-medium mb-2">Contact With Us</h3>
-                         <div class="flex gap-2 opacity-75">
-                             <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/facebook-Icon.svg" alt=""></a>
-                             <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/x-Icon.svg" alt=""></a>
-                             <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/linkdin-icon.svg" alt=""></a>
-                            
-                             
-                         </div>
-                     </div>
-                    </div>
-
-                    <div class="flex justify-between py-5 text-white opacity-50">
+        <!-- footer section start -->
+        <div class="bg-[#0F0F0F] w-full ">
+            <div class="container mx-auto ">
+                <footer class="">
+                    <div class="px-10 text-white flex flex-col sm:flex-row justify-between items-start gap-8  py-5 border-b border-gray-500">
                         <div>
-                            @2023 streamvib, All Rights Reserved
+                            <h3 class="text-xl font-medium mb-2">Home</h3>
+                            <div class="flex flex-col gap-2 opacity-75">
+                                <a class="" href="">Category</a>
+                                <a class="" href="">Devices</a>
+                                <a class="" href="">Pricing</a>
+                                <a class="" href="">FAQ</a>
+                            </div>
                         </div>
-                        <div class="px-3">
-                            <a class="px-2 border-r" href="">Terms of Use</a>
-                            <a class="px-2 border-r" href="">Private Policy</a>
-                            <a class="" href="">Cookie Policy</a>
+                        <div class="">
+                             <h3 class="text-xl font-medium mb-3">Movies</h3>
+                             <div class="flex flex-col gap-2 opacity-75">
+                                 <a class="" href="">Games</a>
+                                 <a class="" href="">Trending</a>
+                                 <a class="" href="">New Release</a>
+                                 <a class="" href="">Popular</a>
+                             </div>
+                         </div>
+                         <div class="col">
+                             <h3 class="text-xl font-medium mb-2">Shows</h3>
+                             <div class="flex flex-col gap-2 opacity-75">
+                                 <a class="" href="">Games</a>
+                                 <a class="" href="">Trending</a>
+                                 <a class="" href="">New Release</a>
+                                 <a class="" href="">Popular</a>
+                             </div>
+                         </div>
+                         <div class="col">
+                             <h3 class="text-xl font-medium mb-2">Support</h3>
+                             <div class="flex flex-col gap-2 opacity-75 ">
+                                 <a class="" href="">Contact Us</a>
+                                 
+                             </div>
+                         </div>
+                         <div class="col">
+                             <h3 class="text-xl font-medium mb-2">Subscription</h3>
+                             <div class="flex flex-col gap-2 opacity-75  ">
+                                 <a class="" href="">Plans</a>
+                                 <a class="" href="">Features</a>
+                                 
+                             </div>
+                         </div>
+                         <div class="col">
+                             <h3 class="text-xl font-medium mb-2">Contact With Us</h3>
+                             <div class="flex gap-2 opacity-75">
+                                 <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/facebook-Icon.svg" alt=""></a>
+                                 <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/x-Icon.svg" alt=""></a>
+                                 <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/linkdin-icon.svg" alt=""></a>
+                             </div>
+                         </div>
                         </div>
-                    </div>
-            
-            </footer>
+    
+                        <div class="flex flex-col sm:flex-row gap-5 text-center justify-between py-5 text-white opacity-50">
+                            <div>
+                                @2023 streamvib, All Rights Reserved
+                            </div>
+                            <div class="px-3">
+                                <a class="px-2 border-r" href="">Terms of Use</a>
+                                <a class="px-2 border-r" href="">Private Policy</a>
+                                <a class="" href="">Cookie Policy</a>
+                            </div>
+                        </div>
+                
+                </footer>
+            </div>
         </div>
-    </div>
-     <!-- footer section end -->
-
-    <script>
-        $(document).ready(function(event){
-
-
-            $(document).click(function(event) {
-                if (!$(event.target).closest('#search_btn').length) {
-                    $('#search_form').hide(); 
-                }
-            });
-
-         
-         
-            // search button
-            $(document).on('click', '#search_btn', function(){
-                $(this).next().show();
-            })
-
-            //  month and yarly plan section
-            $('#monthly_plan').show();
-            $('#yearly_plan').hide();
-            $('#monthly_btn').addClass('bg-stone-700');
-            $('#yearly_btn').removeClass('bg-stone-700');
-            $('#monthly_btn').on('click', function(){
+         <!-- footer section end -->
+    
+        <script>
+            $(document).ready(function(event){
+    
+                // $(document).click(function(event){
+                //     if(event)
+                //     $('#search_form').hide();
+                // });
+           
+                // search button function start
+                $('#search_form').hide();
+                $(document).on('click', '#search_btn', function(){
+                    $('#search_form').show();
+                    $(this).hide()
+                })
+    
+                $(document).on('click', '#search', function(){
+                    $('#search_form').hide();
+                    $('#search_btn').show();
+                });
+                 // search button function end
+    
+                //  month and yarly plan section
                 $('#monthly_plan').show();
                 $('#yearly_plan').hide();
+                $('#monthly_btn').addClass('bg-stone-700');
                 $('#yearly_btn').removeClass('bg-stone-700');
-                $(this).addClass('bg-stone-700');
-            });
-            $('#yearly_btn').on('click', function(){
-                $('#yearly_plan').show();
-                $('#monthly_plan').hide();
-                $('#monthly_btn').removeClass('bg-stone-700');
-                $(this).addClass('bg-stone-700');
-            });
-
-
-            // qna section
-            $(".ans").hide();
-            $('.ans').attr('show', '0');
-            $(document).on('click', '.showQ', function(){
-                if($(this).parent('.question').children('.answer').children('.ans').attr('show') == '0'){
-                    $(this).text('-');
-                   $(this).parent('.question').children('.answer').children('.ans').attr('show', '1')
-                    $(this).parent('.question').children('.answer').children('.ans').show();
-                }else{
-                    $(this).text('+');
-                    $(this).parent('.question').children('.answer').children('.ans').hide()
-                    $(this).parent('.question').children('.answer').children('.ans').attr('show', '0')
-                }
-            });
-
-
-
-           
-            // carasol section
-            let carasol = $('.carasol_body');
-            let carasal_items = carasol.children();
-            let carasol_bar = $('.current_bar');
-        
-            carasal_items.hide();
-            let length = carasal_items.length;
-            let prvPage = carasal_items[0]
-            let preBar = carasol_bar[0]
-            $(preBar).addClass('bg-red-800')
-            $(preBar).addClass('w-6')
-            $(preBar).removeClass('bg-white')
-            $(carasal_items[0]).show();
-            let i = 0;
-
-
-            $('.btn-next').on('click', function(){
-                    i = i + 1
-                    if(i == length) {
-                        i = 0
+                $('#monthly_btn').on('click', function(){
+                    $('#monthly_plan').show();
+                    $('#yearly_plan').hide();
+                    $('#yearly_btn').removeClass('bg-stone-700');
+                    $(this).addClass('bg-stone-700');
+                });
+                $('#yearly_btn').on('click', function(){
+                    $('#yearly_plan').show();
+                    $('#monthly_plan').hide();
+                    $('#monthly_btn').removeClass('bg-stone-700');
+                    $(this).addClass('bg-stone-700');
+                });
+    
+    
+                // qna section
+                $(".ans").hide();
+                $('.ans').attr('show', '0');
+                $(document).on('click', '.showQ', function(){
+                    if($(this).parent('.question').children('.answer').children('.ans').attr('show') == '0'){
+                        $(this).text('-');
+                       $(this).parent('.question').children('.answer').children('.ans').attr('show', '1')
+                        $(this).parent('.question').children('.answer').children('.ans').show();
+                    }else{
+                        $(this).text('+');
+                        $(this).parent('.question').children('.answer').children('.ans').hide()
+                        $(this).parent('.question').children('.answer').children('.ans').attr('show', '0')
                     }
-                    console.log(i)
-                    $(prvPage).hide();
-                    let page  = carasal_items[i]
-                    prvPage = carasal_items[i];
-                    $(preBar).removeClass('bg-red-800')
-                    $(preBar).removeClass('w-6')
-                    $(preBar).addClass('bg-white')
-                    preBar = carasol_bar[i]
-                   
-                    $(preBar).addClass('bg-red-800')
-                    $(preBar).addClass('w-6')
-                 
-                    $(page).show();
-            })
-
-            $('.btn-pre').on('click', function(){
-                    i = i - 1
-                    if(i == - 1 ) {
-                        i = length - 1
-                    }
-
-                    $(prvPage).hide();
-                    let page  = carasal_items[i]
-                    prvPage = carasal_items[i];
-
-                    $(preBar).removeClass('bg-red-800')
-                    $(preBar).removeClass('w-6')
-                    $(preBar).addClass('bg-white')
-                    preBar = carasol_bar[i]
-                   
-                    $(preBar).addClass('bg-red-800')
-                    $(preBar).removeClass('bg-white')
-                    $(preBar).addClass('w-6')
-
-                    $(page).show();
-            })
-                
-        });
-    </script>
+                });
+    
+    
+    
+               
+                // carasol section
+                let carasol = $('.carasol_body');
+                let carasal_items = carasol.children();
+                let carasol_bar = $('.current_bar');
+            
+                carasal_items.hide();
+                let length = carasal_items.length;
+                let prvPage = carasal_items[0]
+                let preBar = carasol_bar[0]
+                $(preBar).addClass('bg-red-800')
+                $(preBar).addClass('w-6')
+                $(preBar).removeClass('bg-white')
+                $(carasal_items[0]).show();
+                let i = 0;
+    
+    
+                $('.btn-next').on('click', function(){
+                        i = i + 1
+                        if(i == length) {
+                            i = 0
+                        }
+                        console.log(i)
+                        $(prvPage).hide();
+                        let page  = carasal_items[i]
+                        prvPage = carasal_items[i];
+                        $(preBar).removeClass('bg-red-800')
+                        $(preBar).removeClass('w-6')
+                        $(preBar).addClass('bg-white')
+                        preBar = carasol_bar[i]
+                       
+                        $(preBar).addClass('bg-red-800')
+                        $(preBar).addClass('w-6')
+                     
+                        $(page).show();
+                })
+    
+                $('.btn-pre').on('click', function(){
+                        i = i - 1
+                        if(i == - 1 ) {
+                            i = length - 1
+                        }
+    
+                        $(prvPage).hide();
+                        let page  = carasal_items[i]
+                        prvPage = carasal_items[i];
+    
+                        $(preBar).removeClass('bg-red-800')
+                        $(preBar).removeClass('w-6')
+                        $(preBar).addClass('bg-white')
+                        preBar = carasol_bar[i]
+                       
+                        $(preBar).addClass('bg-red-800')
+                        $(preBar).removeClass('bg-white')
+                        $(preBar).addClass('w-6')
+    
+                        $(page).show();
+                })
+                    
+            });
+        </script>
 </body>
 </html>
