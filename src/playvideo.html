@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/output.css">
+        <!-- Include Video.js CSS -->
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
@@ -41,11 +43,12 @@
             <!--  nav section end -->
 
             <!-- video play section start -->
-            <section class=" py-10 relative h-[800px] w-[1500px]">
-                <video class="h-[800px] w-[1500px] "  controls>
+            <section class=" py-10 relative w-full">
+
+                <video  id="my-video" class="video-js vjs-default-skin  w-full" controls preload="auto"  >
                     <source src="./images/video.mp4" type="video/mp4">
                     <source src="movie.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
+                    <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
                 </video>
                 <div class="absolute bg-red-500 top-[100px] left-[200px]  rounded-md h-3/5 w-3/4 p-10" style=" background: rgb(20,20,20);
 background: linear-gradient(0deg, rgba(20,20,20,0.695098107602416) 0%, rgba(20,20,20,0.7539216370141807) 100%); ">
@@ -127,13 +130,10 @@ background: linear-gradient(0deg, rgba(20,20,20,0.695098107602416) 0%, rgba(20,2
 
 
 
-    <!-- <div class="bg-[#141414] h-full">
-        <div class="container max-w-[1580px] mx-auto ">
-           
-          hadi
-        </div>
-    </div> -->
+
+    <script src="https://vjs.zencdn.net/7.10.2/video.js"></script> 
    <script>
+    var player = videojs('my-video'); // Initialize Video.js player
         $(document).ready(function(){
             let active = 0;
             let ele = $('.checkbox_warp');

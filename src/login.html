@@ -8,55 +8,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <div class="bg-[#141414] h-screen">
-        <div class="container max-w-[1580px] mx-auto ">
-            
-      
-        <!--  nav section start -->
-        <nav class="flex justify-between py-3 items-center px-2 " >
-            <div class="">
-                <a href="">
-                    <img class="w-15" src="./images/Logo.svg" alt="">
-                </a>
-            </div>
+    <div class=" min-h-screen h-full w-full">
 
-            <ul class="hidden   sm:flex gap-3 bg-[#0F0F0F]   border-2 p-1.5 rounded-md  border-[#1F1F1F]  text-white ">
-                <li class="px-3 py-2 border bg-[#1A1A1A] border-[#1A1A1A] rounded-md" ><a href="" class="">Home</a></li>
-                <li class="px-3 py-2 border bg-[#1A1A1A] border-[#1A1A1A] rounded-md"><a href="">TV Station</a></li>
-                <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Notification</a></li>
-                <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md" ><a href="">VDO</a></li>
-                <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Setting</a></li>
-                <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Account</a></li>
-            </ul>
+        <div class="bg-[#141414] h-full block">
+            <!--  nav section start -->
+            <div class="container mx-auto">
+
+                <nav class="flex justify-between py-3 items-center px-2 " >
+                    <div class="">
+                        <a href="">
+                            <img class="w-15" src="{{ URL::asset('assets/frontend/images/logo.svg') }}" alt="">
+                        </a>
+                    </div>
+
+                    <ul class="hidden   sm:flex gap-3 bg-[#0F0F0F]   border-2 p-1.5 rounded-md  border-[#1F1F1F]  text-white ">
+                        <li class="px-3 py-2 border bg-[#1A1A1A] border-[#1A1A1A] rounded-md" ><a href="" class="">Home</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">TV Station</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Notification</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md" ><a href="">VDO</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Setting</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Account</a></li>
+                    </ul>
 
 
-            <div class="flex gap-5 items-center">
-                <div class=" flex justify-between items-center">
-                    <button id="search_btn"><img class="size-6" src="./images/search-Icon.svg" alt=""></button>
-                    <form action="" id="search_form" class="bg-black flex justify-center items-center relative">
-                        <input type="text" class="border bg-black border-redColor text-white opacity-50 focus:border-redColor  py-2 px-3">
-                        <button id="search" class="absolute right-2"><img class="size-6" src="./images/search-Icon.svg" alt=""></button>
-                    </form>
-                </div>
+                    <div class="flex gap-5 items-center">
+                        <div class=" flex justify-between items-center">
+                            <button id="search_btn"><img class="size-6" src="{{ URL::asset('assets/frontend/images/search-Icon.svg') }}" alt=""></button>
+                            <form action="" id="search_form" class="bg-black flex justify-center items-center relative">
+                                <input type="text" class="border bg-black border-redColor text-white opacity-50 focus:border-redColor  py-2 px-3">
+                                <button id="search" class="absolute right-2"><img class="size-6" src="{{ URL::asset('assets/frontend/images/search-Icon.svg') }}" alt=""></button>
+                            </form>
+                        </div>
 
-                <div class="flex justify-between items-center relative">
-                    <button class=""><img class="size-6" src="./images/notify-Icon.svg" alt=""></button>
-                    <div class="bg-black border p-10 absolute hidden"></div>
-                </div>
-            </div>
+                        <div class="flex justify-between items-center relative">
+                            <button class=""><img class="size-6" src="{{ URL::asset('assets/frontend/images/notify-Icon.svg') }}" alt=""></button>
+                            <div class="bg-black border p-10 absolute hidden"></div>
+                        </div>
+                    </div>
 
-        </nav>
-        <!--  nav section end -->
-           
+                </nav>
 
+            <!--  nav section end -->
             <!-- login form section start -->
-            <section class="p-10 w-full md:w-2/4 sm:w-1/4 mx-auto flex flex-col gap-10 mt-[100px]">
+            <section class="p-10 w-full md:w-2/4 sm:w-1/4 mx-auto flex flex-col gap-10 mt-[100px] h-full">
                 <div class="text-center text-white space-y-5">
                     <h2 class="text-2xl font-normal ">Login form</h2>
                     <p class="opacity-50 text-sm">Enter following details to login.</p>
                 </div>
                 <form action="" class="flex gap-5 flex-col">
-                    <div class="border border-[#ED2024] rounded-md p-3   gap-3 flex items-center justify-start" >
+                    <div class="border border-[#FFFFFF1A]  hover:border-[#ED2024] rounded-md p-3   gap-3 flex items-center justify-start" >
                         <div class=" border-r pr-3 border-[#FFFFFF1A]">
                             <img src="./images/email.svg" alt="">
                         </div>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
 
-                    <div class="border border-[#FFFFFF1A] rounded-md p-3   gap-3 flex items-center justify-start" >
+                    <div class="border border-[#FFFFFF1A]  hover:border-[#ED2024] rounded-md p-3   gap-3 flex items-center justify-start" >
                         <div class=" border-r pr-3 border-[#FFFFFF1A]">
                             <img src="./images/email.svg" alt="">
                         </div>
@@ -100,17 +100,86 @@
                 </div>
             </section>
             <!-- login form section end -->
+              
+
+            </div>
+        </div>
+
+
+
+        <!-- footer section start -->
+        <div class="bg-[#0F0F0F] w-full">
+            <div class="container mx-auto ">
+                <footer class="">
+                    <div class="px-10 text-white flex flex-col sm:flex-row justify-between items-start gap-8  py-5 border-b border-gray-500">
+                        <div>
+                            <h3 class="text-xl font-medium mb-2">Home</h3>
+                            <div class="flex flex-col gap-2 opacity-75">
+                                <a class="" href="">Category</a>
+                                <a class="" href="">Devices</a>
+                                <a class="" href="">Pricing</a>
+                                <a class="" href="">FAQ</a>
+                            </div>
+                        </div>
+                        <div class="">
+                                <h3 class="text-xl font-medium mb-3">Movies</h3>
+                                <div class="flex flex-col gap-2 opacity-75">
+                                    <a class="" href="">Games</a>
+                                    <a class="" href="">Trending</a>
+                                    <a class="" href="">New Release</a>
+                                    <a class="" href="">Popular</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h3 class="text-xl font-medium mb-2">Shows</h3>
+                                <div class="flex flex-col gap-2 opacity-75">
+                                    <a class="" href="">Games</a>
+                                    <a class="" href="">Trending</a>
+                                    <a class="" href="">New Release</a>
+                                    <a class="" href="">Popular</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h3 class="text-xl font-medium mb-2">Support</h3>
+                                <div class="flex flex-col gap-2 opacity-75 ">
+                                    <a class="" href="">Contact Us</a>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h3 class="text-xl font-medium mb-2">Subscription</h3>
+                                <div class="flex flex-col gap-2 opacity-75  ">
+                                    <a class="" href="">Plans</a>
+                                    <a class="" href="">Features</a>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h3 class="text-xl font-medium mb-2">Contact With Us</h3>
+                                <div class="flex gap-2 opacity-75">
+                                    <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="{{ URL::asset('assets/frontend/images/facebook-Icon.svg') }}" alt=""></a>
+                                    <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="{{ URL::asset('assets/frontend/images/x-Icon.svg') }}" alt=""></a>
+                                    <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="{{ URL::asset('assets/frontend/images/linkdin-icon.svg') }}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-5 text-center justify-between py-5 text-white opacity-50">
+                            <div>
+                                @2023 streamvib, All Rights Reserved
+                            </div>
+                            <div class="px-3">
+                                <a class="px-2 border-r" href="">Terms of Use</a>
+                                <a class="px-2 border-r" href="">Private Policy</a>
+                                <a class="" href="">Cookie Policy</a>
+                            </div>
+                        </div>
+
+                </footer>
+            </div>
         </div>
     </div>
-
-
-
-    <!-- <div class="bg-[#141414] h-full">
-        <div class="container max-w-[1580px] mx-auto ">
-           
-          hadi
-        </div>
-    </div> -->
+    <!-- footer section end -->
    
 
 
@@ -118,10 +187,7 @@
     <script>
         $(document).ready(function(event){
 
-            // $(document).click(function(event){
-            //     if(event)
-            //     $('#search_form').hide();
-            // });
+
        
             // search button function start
             $('#search_form').hide();

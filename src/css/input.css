@@ -7,7 +7,7 @@
 }
 
 .btn-red {
-    @apply px-3 py-2 text-white rounded bg-redColor
+    @apply px-3 py-2 text-white rounded bg-redColor;
 }
 
 .card {
