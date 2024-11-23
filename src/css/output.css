@@ -612,6 +612,14 @@ video::-webkit-media-controls-current-time-display {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -644,12 +652,24 @@ video::-webkit-media-controls-current-time-display {
   right: 1.25rem;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-1\/2 {
   top: 50%;
 }
 
+.top-3 {
+  top: 0.75rem;
+}
+
 .top-5 {
   top: 1.25rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .col-span-full {
@@ -662,6 +682,10 @@ video::-webkit-media-controls-current-time-display {
 
 .col-end-3 {
   grid-column-end: 3;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .mx-auto {
@@ -696,6 +720,10 @@ video::-webkit-media-controls-current-time-display {
 
 .mb-\[100px\] {
   margin-bottom: 100px;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-3 {
@@ -832,8 +860,16 @@ video::-webkit-media-controls-current-time-display {
   height: 100vh;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-0 {
+  width: 0px;
 }
 
 .w-12 {
@@ -864,10 +900,6 @@ video::-webkit-media-controls-current-time-display {
   width: 2rem;
 }
 
-.w-9 {
-  width: 2.25rem;
-}
-
 .w-\[1600px\] {
   width: 1600px;
 }
@@ -892,10 +924,6 @@ video::-webkit-media-controls-current-time-display {
   width: 100%;
 }
 
-.w-0 {
-  width: 0px;
-}
-
 .min-w-\[230px\] {
   min-width: 230px;
 }
@@ -906,6 +934,10 @@ video::-webkit-media-controls-current-time-display {
 
 .max-w-\[230px\] {
   max-width: 230px;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .flex-1 {
@@ -928,6 +960,18 @@ video::-webkit-media-controls-current-time-display {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.snap-y {
+  scroll-snap-type: y var(--tw-scroll-snap-strictness);
+}
+
+.snap-mandatory {
+  --tw-scroll-snap-strictness: mandatory;
+}
+
+.snap-start {
+  scroll-snap-align: start;
 }
 
 .grid-cols-1 {
@@ -1074,6 +1118,14 @@ video::-webkit-media-controls-current-time-display {
   overflow: hidden;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1189,6 +1241,11 @@ video::-webkit-media-controls-current-time-display {
   background-color: rgb(26 26 26 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#242424\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 36 36 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#282b2b\] {
   --tw-bg-opacity: 1;
   background-color: rgb(40 43 43 / var(--tw-bg-opacity));
@@ -1219,6 +1276,11 @@ video::-webkit-media-controls-current-time-display {
   background-color: rgb(26 26 26 / var(--tw-bg-opacity));
 }
 
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -1227,6 +1289,11 @@ video::-webkit-media-controls-current-time-display {
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-gray-500 {
@@ -1282,6 +1349,25 @@ video::-webkit-media-controls-current-time-display {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-blue-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-60 {
+  --tw-bg-opacity: 0.6;
 }
 
 .bg-cover {
@@ -1578,6 +1664,20 @@ video::-webkit-media-controls-current-time-display {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.snap-y {
+  scroll-snap-type: y mandatory;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -1712,6 +1812,10 @@ video::-webkit-media-controls-current-time-display {
 
   .sm\:min-w-\[300px\] {
     min-width: 300px;
+  }
+
+  .sm\:max-w-\[430px\] {
+    max-width: 430px;
   }
 
   .sm\:grid-cols-2 {

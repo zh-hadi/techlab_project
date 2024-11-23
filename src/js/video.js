@@ -9,6 +9,8 @@ const progressIndicator = document.querySelector("#progress-indicator");
 const progessBar = document.querySelector("#progress-bar");
 const screenBtn = document.querySelector('#fullscreen');
 
+console.log(video.duration)
+
 function playNpauseFn() {
   video.paused ? video.play() : video.pause();
 }

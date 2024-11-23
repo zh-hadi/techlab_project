@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/output.css">
+     <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+  <!-- jQuery (Slick requires jQuery) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="bg-[#242424]  min-h-screen h-full w-full">
+
+        <div class="bg-[#242424] h-full block relative">
+            <!--  nav section start -->
+            <div class="container mx-auto">
+
+                <nav class="flex justify-between py-3 items-center px-2 " >
+                    <div class="">
+                        <a href="">
+                            <img class="w-15" src="{{ URL::asset('assets/frontend/images/logo.svg') }}" alt="">
+                        </a>
+                    </div>
+
+                    <ul class="hidden   sm:flex gap-3 bg-[#0F0F0F]   border-2 p-1.5 rounded-md  border-[#1F1F1F]  text-white ">
+                        <li class="px-3 py-2 border bg-[#1A1A1A] border-[#1A1A1A] rounded-md" ><a href="" class="">Home</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">TV Station</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Notification</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md" ><a href="">VDO</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Setting</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Account</a></li>
+                    </ul>
+
+
+                    <div class="flex gap-5 items-center">
+                        <div class=" flex justify-between items-center">
+                            <button id="search_btn"><img class="size-6" src="{{ URL::asset('assets/frontend/images/search-Icon.svg') }}" alt=""></button>
+                            <form action="" id="search_form" class="bg-black flex justify-center items-center relative">
+                                <input type="text" class="border bg-black border-redColor text-white opacity-50 focus:border-redColor  py-2 px-3">
+                                <button id="search" class="absolute right-2"><img class="size-6" src="{{ URL::asset('assets/frontend/images/search-Icon.svg') }}" alt=""></button>
+                            </form>
+                        </div>
+
+                        <div class="flex justify-between items-center relative">
+                            <button class=""><img class="size-6" src="{{ URL::asset('assets/frontend/images/notify-Icon.svg') }}" alt=""></button>
+                            <div class="bg-black border p-10 absolute hidden"></div>
+                        </div>
+                    </div>
+
+                </nav>
+                <!--  nav section end -->
+        
+                
+              
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="w-full  h-screen  bg-[#242424] absolute top-0  video-box ">
+
+
+            <div class="slider">
+
+            <section class="bg-[#141414] w-full h-full sm:max-w-[430px] mx-auto video-box flex flex-col justify-between relative">
+   
+                    <!-- back button -->
+                     <button class=" p-4"><img src="./images/left-arow.png" alt=""></button>
+                     <figure>
+                        <video class="w-full">
+                            <source class="" src="./images/video.mp4" type="">
+                        </video>
+                     </figure>
+                     <!-- progress bar -->
+                     <div id="progress-bar" class="h-1 w-full bg-white cursor-pointer mb-4 absolute top-0 left-0 right-0">
+                        <div
+                        id="progress-indicator"
+                        class="h-full w-0 bg-red-500 transition-all duration-500 ease-in-out"
+                        ></div>
+         
+                </div>
+    
+                 <!-- play button -->
+                 <button
+                 id="play-pause"
+                 class="transition-all duration-100 ease-linear hover:scale-125 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                 >
+                    <i class="material-icons text-white text-5xl inline-block w-12">play_arrow</i>
+                 </button>
+    
+                 <!-- comment section  -->
+                 <div class="   m-2">
+                    <form action="" method="post" class="relative">
+                        <input type="text" class="p-3 w-full border rounded-full text-white bg-black">
+                        <input type="submit" value="Send" class="text-white hover:scale-110 absolute right-5 font-bold top-3">
+                    </form>
+                 </div>
+            </section>
+
+            <section class="bg-[#141414] w-full h-full sm:max-w-[430px] mx-auto video-box flex flex-col justify-between relative">
+   
+                <!-- back button -->
+                 <button class=" p-4"><img src="./images/left-arow.png" alt=""></button>
+                 <figure>
+                    <video class="w-full">
+                        <source class="" src="./images/video.mp4" type="">
+                    </video>
+                 </figure>
+                 <!-- progress bar -->
+                 <div id="progress-bar" class="h-1 w-full bg-white cursor-pointer mb-4 absolute top-0 left-0 right-0">
+                    <div
+                    id="progress-indicator"
+                    class="h-full w-0 bg-red-500 transition-all duration-500 ease-in-out"
+                    ></div>
+     
+            </div>
+
+             <!-- play button -->
+             <button
+             id="play-pause"
+             class="transition-all duration-100 ease-linear hover:scale-125 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+             >
+                <i class="material-icons text-white text-5xl inline-block w-12">play_arrow</i>
+             </button>
+
+             <!-- comment section  -->
+             <div class="   m-2">
+                <form action="" method="post" class="relative">
+                    <input type="text" class="p-3 w-full border rounded-full text-white bg-black">
+                    <input type="submit" value="Send" class="text-white hover:scale-110 absolute right-5 font-bold top-3">
+                </form>
+             </div>
+        </section>
+            <!-- item 2 -->
+            <section class="bg-[#141414] w-full h-full sm:max-w-[430px] mx-auto video-box flex flex-col justify-between relative">
+                <!-- back button -->
+                 <button class=" p-4"><img src="./images/left-arow.png" alt=""></button>
+                 <figure>
+                    <video class="w-full">
+                        <source class="" src="./images/video.mp4" type="">
+                    </video>
+                 </figure>
+                 <!-- progress bar -->
+                 <div id="progress-bar" class="h-1 w-full bg-white cursor-pointer mb-4 absolute top-0 left-0 right-0">
+                    <div
+                    id="progress-indicator"
+                    class="h-full w-0 bg-red-500 transition-all duration-500 ease-in-out"
+                    ></div>
+                </div>
+    
+                 <!-- play button -->
+                 <button
+                 id="play-pause"
+                 class="transition-all duration-100 ease-linear hover:scale-125 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                 >
+                    <i class="material-icons text-white text-5xl inline-block w-12">play_arrow</i>
+                 </button>
+    
+                 <!-- comment section  -->
+                 <div class="   m-2">
+                    <form action="" method="post" class="relative">
+                        <input type="text" class="p-3 w-full border rounded-full text-white bg-black">
+                        <input type="submit" value="Send" class="text-white hover:scale-110 absolute right-5 font-bold top-3">
+                    </form>
+                 </div>
+            </section>
+            </div>
+        <!-- item 1 -->
+       
+    </div>
+
+    <script src="./js/reel.js"></script>
+    <script>
+         $(document).ready(function(){
+            $('.slider').slick({
+                infinite: true,          // Infinite scroll
+                vertical: true,          // Enable vertical scrolling
+                verticalSwiping: true,   // Enable vertical swipe support
+                slidesToShow: 1,         // Number of slides visible at once
+                slidesToScroll: 1,       // Number of slides to scroll at a time
+                arrows: true,            // Show previous/next arrows
+                dots: false,             // Show navigation dots
+                autoplay: true,          // Enable autoplay
+                autoplaySpeed: 2000,     // Autoplay speed in ms
+            
+            });
+        });
+    </script>
+
+</body>
+</html>

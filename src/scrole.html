@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slick Carousel Vertical</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+  <!-- jQuery (Slick requires jQuery) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Slick Carousel Container -->
+  <div class="w-full h-screen max-w-4xl mx-auto p-4">
+    <div class="slider">
+      <div class="h-screen bg-blue-300 flex justify-center items-center">
+        <h2 class="text-white text-xl">Item 1</h2>
+      </div>
+      <div class="h-screen bg-blue-400 flex justify-center items-center">
+        <h2 class="text-white text-xl">Item 2</h2>
+      </div>
+      <div class="h-screen bg-blue-500 flex justify-center items-center">
+        <h2 class="text-white text-xl">Item 3</h2>
+      </div>
+      <div class="h-screen bg-blue-600 flex justify-center items-center">
+        <h2 class="text-white text-xl">Item 4</h2>
+      </div>
+      <!-- Add more items as needed -->
+    </div>
+  </div>
+
+  <!-- Initialize Slick Carousel -->
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        infinite: true,          // Infinite scroll
+        vertical: true,          // Enable vertical scrolling
+        verticalSwiping: true,   // Enable vertical swipe support
+        slidesToShow: 1,         // Number of slides visible at once
+        slidesToScroll: 1,       // Number of slides to scroll at a time
+        arrows: true,            // Show previous/next arrows
+        dots: false,             // Show navigation dots
+        autoplay: true,          // Enable autoplay
+        autoplaySpeed: 2000,     // Autoplay speed in ms
+        responsive: [
+          {
+            breakpoint: 768,    // For mobile/tablet view
+            settings: {
+              slidesToShow: 1,  // Show 1 item on smaller screens
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 1024,   // For medium screens
+            settings: {
+              slidesToShow: 2,  // Show 2 items on medium screens
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+</body>
+</html>
