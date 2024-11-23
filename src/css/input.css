@@ -49,3 +49,17 @@
   .snap-start {
     scroll-snap-align: start;
   }
+
+
+  /* Ensure each slide takes up the full height */
+.slick-slide {
+  height: 100vh !important;
+}
+
+.slick-list {
+  height: 100vh !important; /* Ensure the slider container is 100vh */
+}
+
+.slider {
+  height: 100vh; /* Ensure the entire slider takes up 100% of viewport height */
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  
+    <!-- jQuery (Slick requires jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+    <!-- Slick Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body class="relative">
+    <div class=" min-h-screen h-100 w-full">
+
+        <div class="bg-[#141414] h-full block">
+            <!--  nav section start -->
+            <div class="container mx-auto">
+
+                <nav class="flex justify-between py-3 items-center px-2 " >
+                    <div class="">
+                        <a href="">
+                            <img class="w-15" src="{{ URL::asset('assets/frontend/images/logo.svg') }}" alt="">
+                        </a>
+                    </div>
+
+                    <ul class="hidden   sm:flex gap-3 bg-[#0F0F0F]   border-2 p-1.5 rounded-md  border-[#1F1F1F]  text-white ">
+                        <li class="px-3 py-2 border bg-[#1A1A1A] border-[#1A1A1A] rounded-md" ><a href="" class="">Home</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">TV Station</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Notification</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md" ><a href="">VDO</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Setting</a></li>
+                        <li class="px-3 py-2 opacity-75 hover:opacity-100  hover:bg-[#1A1A1A] hoverborder-[#1A1A1A] hover:rounded-md"><a href="">Account</a></li>
+                    </ul>
+
+
+                    <div class="flex gap-5 items-center">
+                        <div class=" flex justify-between items-center">
+                            <button id="search_btn"><img class="size-6" src="{{ URL::asset('assets/frontend/images/search-Icon.svg') }}" alt=""></button>
+                            <form action="" id="search_form" class="bg-black flex justify-center items-center relative">
+                                <input type="text" class="border bg-black border-redColor text-white opacity-50 focus:border-redColor  py-2 px-3">
+                                <button id="search" class="absolute right-2"><img class="size-6" src="{{ URL::asset('assets/frontend/images/search-Icon.svg') }}" alt=""></button>
+                            </form>
+                        </div>
+
+                        <div class="flex justify-between items-center relative">
+                            <button class=""><img class="size-6" src="{{ URL::asset('assets/frontend/images/notify-Icon.svg') }}" alt=""></button>
+                            <div class="bg-black border p-10 absolute hidden"></div>
+                        </div>
+                    </div>
+
+                </nav>
+
+            <!--  nav section end -->
+            <!-- login form section start -->
+            <section class="p-10 w-full md:w-2/4 sm:w-1/4 mx-auto flex flex-col gap-10 mt-[100px] h-full">
+                <div class="text-center text-white space-y-5">
+                    <h2 class="text-2xl font-normal ">Login form</h2>
+                    <p class="opacity-50 text-sm">Enter following details to login.</p>
+                </div>
+                <form action="" class="flex gap-5 flex-col">
+                    <div class="border border-[#FFFFFF1A]  hover:border-[#ED2024] rounded-md p-3   gap-3 flex items-center justify-start" >
+                        <div class=" border-r pr-3 border-[#FFFFFF1A]">
+                            <img src="./images/email.svg" alt="">
+                        </div>
+                        <div class="flex-1 flex-col gap-2 text-[#FFFFFF66]">
+                            <label for="" class=" text-md">Email</label>
+                            <input type="email" class="border-none bg-[#141414] p-2 w-full focus:outline-none" placeholder="example@gmail.com" >
+                        </div>
+                        <div>
+                            <img src="./images/success.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="border border-[#FFFFFF1A]  hover:border-[#ED2024] rounded-md p-3   gap-3 flex items-center justify-start" >
+                        <div class=" border-r pr-3 border-[#FFFFFF1A]">
+                            <img src="./images/email.svg" alt="">
+                        </div>
+                        <div class="flex-1 flex-col gap-2 text-[#FFFFFF66]">
+                            <label for="" class=" text-md">Password</label>
+                            <input type="email" class="border-none bg-[#141414] p-2 w-full focus:outline-none" placeholder="**********">
+                        </div>
+                        <div>
+                            <img src="./images/eye-off.svg" alt="">
+                        </div>
+                    </div>
+                    <div  class="flex gap-5 flex-col md:flex-row justify-between text-sm text-[#999999]">
+                        <div>
+                            <input type="checkbox" name="" value="" class="bg-red-500">
+                            <label for="" class="text-sm text-[#999999]">Remember me</label>
+                        </div>
+                        <a href="" class="hover:underline hover:underline-offset-2">Forget Password</a>
+                    </div>
+                    <button class="bg-red-500 py-3 hover:bg-red-400 px-2 rounded-full text-white font-normal ">Login</button>
+                    <a href="" class="text-white text-center hover:underline hover:underline-offset-2 decoration-red-500">Registation</a>
+                </form>
+                <div class="flex gap-2 opacity-70 mx-auto">
+                    <a class=" bg-gray-300 opacity-90 p-2 rounded-full" href="">
+                        <img style="height: 24px; width: 24px;" src="./images/facebook-Icon.svg" alt="">
+                    </a>
+                    <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/x-Icon.svg" alt=""></a>
+                    <a class=" bg-dark p-2 rounded" href=""><img style="height: 24px; width: 24px;" src="./images/linkdin-icon.svg" alt=""></a>
+                </div>
+            </section>
+            <!-- login form section end -->
+              
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="absolute top-0 bottom-0 left-0 right-0 h-screen w-full bg-blue-300">
+
+        <div class="w-full h-screen max-w-4xl mx-auto p-4">
+            <div class="slider h-screen">
+                <div class="slick-slide bg-blue-300 flex justify-center items-center">
+                  <div class="h-100 w-full bg-green-500"></div>
+                </div>
+                <div class="slick-slide bg-blue-400 flex justify-center items-center">
+                  <div class="h-100 w-full bg-red-500"></div>
+                </div>
+                <div class="slick-slide bg-blue-500 flex justify-center items-center">
+                  <div class="h-100 w-full bg-indigo-500"></div>
+                </div>
+                <div class="slick-slide bg-blue-600 flex justify-center items-center">
+                  <div class="h-100 w-full bg-yellow-500"></div>
+                </div>
+              </div>
+              
+          </div>
+
+    </div>
+    <!-- footer section end -->
+   
+
+
+      <!-- Initialize Slick Carousel -->
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        infinite: true,          // Infinite scroll
+        vertical: true,          // Enable vertical scrolling
+        verticalSwiping: true,   // Enable vertical swipe support
+        slidesToShow: 1,         // Number of slides visible at once
+        slidesToScroll: 1,       // Number of slides to scroll at a time
+        arrows: false,            // Show previous/next arrows
+        dots: false,             // Show navigation dots
+        autoplay: false,          // Enable autoplay
+        autoplaySpeed: 2000,     // Autoplay speed in ms
+       
+      });
+    });
+  </script>
+
+
+</body>
+</html>

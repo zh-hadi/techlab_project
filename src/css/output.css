@@ -616,10 +616,6 @@ video::-webkit-media-controls-current-time-display {
   visibility: visible;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -666,10 +662,6 @@ video::-webkit-media-controls-current-time-display {
 
 .top-5 {
   top: 1.25rem;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .col-span-full {
@@ -720,10 +712,6 @@ video::-webkit-media-controls-current-time-display {
 
 .mb-\[100px\] {
   margin-bottom: 100px;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .mt-3 {
@@ -860,10 +848,6 @@ video::-webkit-media-controls-current-time-display {
   height: 100vh;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -928,16 +912,16 @@ video::-webkit-media-controls-current-time-display {
   min-width: 230px;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .max-w-\[1580px\] {
   max-width: 1580px;
 }
 
 .max-w-\[230px\] {
   max-width: 230px;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
 }
 
 .flex-1 {
@@ -960,18 +944,6 @@ video::-webkit-media-controls-current-time-display {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.snap-y {
-  scroll-snap-type: y var(--tw-scroll-snap-strictness);
-}
-
-.snap-mandatory {
-  --tw-scroll-snap-strictness: mandatory;
-}
-
-.snap-start {
-  scroll-snap-align: start;
 }
 
 .grid-cols-1 {
@@ -1118,14 +1090,6 @@ video::-webkit-media-controls-current-time-display {
   overflow: hidden;
 }
 
-.overflow-y-auto {
-  overflow-y: auto;
-}
-
-.scroll-smooth {
-  scroll-behavior: smooth;
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1266,9 +1230,24 @@ video::-webkit-media-controls-current-time-display {
   background-color: rgb(20 20 20 / var(--tw-bg-opacity));
 }
 
+.bg-blue-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .bg-cardbg {
@@ -1291,14 +1270,19 @@ video::-webkit-media-controls-current-time-display {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
 .bg-gray-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
 }
 
 .bg-indigo-800 {
@@ -1351,23 +1335,9 @@ video::-webkit-media-controls-current-time-display {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-blue-300 {
+.bg-yellow-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
-}
-
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
-}
-
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
-.bg-opacity-60 {
-  --tw-bg-opacity: 0.6;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -1670,6 +1640,22 @@ video::-webkit-media-controls-current-time-display {
 
 .snap-start {
   scroll-snap-align: start;
+}
+
+/* Ensure each slide takes up the full height */
+
+.slick-slide {
+  height: 100vh !important;
+}
+
+.slick-list {
+  height: 100vh !important;
+  /* Ensure the slider container is 100vh */
+}
+
+.slider {
+  height: 100vh;
+  /* Ensure the entire slider takes up 100% of viewport height */
 }
 
 .hover\:scale-110:hover {
